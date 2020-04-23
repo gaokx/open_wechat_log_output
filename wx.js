@@ -37,13 +37,11 @@ Java.perform(function () {
     Xlog.logWrite2.implementation = function () {
         // console.log("logWrite2 ===================== start");
         if (arguments[0] == 2) {
-            if (arguments[8] == "contact_info_biz_add item has been clicked!") {
-                showStacks();
-            }
+            // console.log("..");
         }
-        // for (var i = 0; i < arguments.length; i++) {
-        //     console.log("[" + i + "]", arguments[i]);
-        // }
+        for (var i = 0; i < arguments.length; i++) {
+            console.log("[" + i + "]", arguments[i]);
+        }
         return Xlog.logWrite2.apply(this, arguments);
     };
 });
