@@ -1,0 +1,2 @@
+# open_wechat_log_output
+通过Frida打开微信日志输出总开关
